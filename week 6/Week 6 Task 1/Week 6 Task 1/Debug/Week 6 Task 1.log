@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\users\duxburya\documents\visual studio 2017\projects\week 6 task 1\week 6 task 1\source.cpp(74): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\duxburya\documents\visual studio 2017\projects\week 6 task 1\week 6 task 1\source.cpp(80): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\duxburya\documents\visual studio 2017\projects\week 6 task 1\week 6 task 1\source.cpp(102): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\duxburya\documents\visual studio 2017\projects\week 6 task 1\week 6 task 1\source.cpp(105): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\duxburya\documents\visual studio 2017\projects\week 6 task 1\week 6 task 1\source.cpp(108): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\duxburya\documents\visual studio 2017\projects\week 6 task 1\week 6 task 1\source.cpp(92): warning C4715: 'searchTree': not all control paths return a value
+  Week 6 Task 1.vcxproj -> c:\users\duxburya\documents\visual studio 2017\Projects\Week 6 Task 1\Debug\Week 6 Task 1.exe
+  Week 6 Task 1.vcxproj -> c:\users\duxburya\documents\visual studio 2017\Projects\Week 6 Task 1\Debug\Week 6 Task 1.pdb (Partial PDB)

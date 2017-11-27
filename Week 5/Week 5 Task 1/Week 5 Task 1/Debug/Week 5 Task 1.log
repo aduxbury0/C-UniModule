@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\alex\desktop\week 5 task 1\week 5 task 1\source.cpp(95): error C2664: 'void deleteDuplicates(List)': cannot convert argument 1 from 'List *' to 'List'
+  c:\users\alex\desktop\week 5 task 1\week 5 task 1\source.cpp(95): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\alex\desktop\week 5 task 1\week 5 task 1\source.cpp(113): warning C4018: '<': signed/unsigned mismatch
+c:\users\alex\desktop\week 5 task 1\week 5 task 1\source.cpp(128): warning C4018: '<': signed/unsigned mismatch

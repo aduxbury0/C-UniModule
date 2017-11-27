@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\alex\desktop\week 3\week 3 task 1\week 3 task 1\source.cpp(65): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LINK : C:\Users\Alex\Desktop\Week 3\Week 3 Task 1\x64\Debug\Week 3 Task 1.exe not found or not built by the last incremental link; performing full link
+  Week 3 Task 1.vcxproj -> C:\Users\Alex\Desktop\Week 3\Week 3 Task 1\x64\Debug\Week 3 Task 1.exe
+  Week 3 Task 1.vcxproj -> C:\Users\Alex\Desktop\Week 3\Week 3 Task 1\x64\Debug\Week 3 Task 1.pdb (Partial PDB)
