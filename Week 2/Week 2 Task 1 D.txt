@@ -1,0 +1,5 @@
+The complexity for each subtask is as follows:
+
+1a: O(N) Complexity
+1b: O(N^2) Complexity due to nested loops
+1c: O(N) Complexity

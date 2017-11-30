@@ -1,0 +1,16 @@
+Week 2 Task 2 - O(N) complexity
+
+CHECKPALIN(inputArray)
+
+	CREATE ARRAY reversed(size:inputArray)
+	
+	reverseCount <- 1
+	
+	FOR i <- (size:inputArray) to 1
+	
+		reversed[reverseCount] <- inputArray[i]
+	
+	IF reversed = inputArray
+		RETURN true
+	ELSE
+		RETURN false

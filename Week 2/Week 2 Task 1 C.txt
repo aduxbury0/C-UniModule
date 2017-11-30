@@ -1,0 +1,39 @@
+Week 2 - Task 1 C -
+
+DIFFPOLY(degree1, Poly1, degree2, Poly2)
+
+	currentPower <- (degree1)
+	
+	CREAT ARRAY diffPoly1[size: Poly1 - 1)
+	
+	FOR i <- 1 to (size:Poly1)
+	
+		IF i < (size:Poly1 - 2)
+			
+			diffPoly1[i] <- (Poly1[i] * currentPower)
+			
+		ELSE IF i = Poly1[LAST]
+			
+			diffPoly1[i-1] <- Poly1[i] + 1
+			
+		currentPower <- currentPower - 1
+		
+
+	currentPower <- (degree2)
+	
+	CREAT ARRAY diffPoly2[size: Poly2 - 1)
+	
+	FOR i <- 1 to (size:Poly2)
+	
+		IF i < (size:Poly2 - 2)
+			
+			diffPoly2[i] <- (Poly2[i] * currentPower)
+			
+		ELSE IF i = Poly2[LAST]
+			
+			diffPoly2[i-1] <- Poly2[i] + 1
+			
+		currentPower <- currentPower - 1
+		
+	
+	RETURN (degree1 - 1), diffPoly1, (degree2 - 1), diffPoly2

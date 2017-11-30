@@ -1,0 +1,29 @@
+Week 2 task 1-A -
+
+ADDPOLY(degree1, Poly1, degree2, Poly2)
+
+IF degree1 > degree2
+	CREATE ARRAY Largest[size: Newdegree + 1] <- Poly1
+	CREATE ARRAY Smallest[size: degree2 + 1] <- Poly2
+
+ELSE
+	CREATE ARRAY Largest[size: Newdegree + 1] <- Poly2
+	CREATE ARRAY Smallest[size: degree1 + 1] <- Poly1
+	
+CREATE ARRAY result[size: Largest]
+
+FOR i <- 0 to (size:Largest)
+	
+	IF i < (size:Largest - size:Smallest)
+		
+		result[i] = Largest[i]
+		
+	ELSE
+		
+		result[i] = Largest[i] + Smallest[i]
+		
+
+		
+Newdegree = (size:Largest - 1)
+
+RETURN result, Newdegree
