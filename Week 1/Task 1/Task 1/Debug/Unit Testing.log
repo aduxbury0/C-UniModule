@@ -1,0 +1,27 @@
+﻿  Source.cpp
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(22): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\sstream(13): note: see declaration of 'std'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(22): error C2065: 'cout': undeclared identifier
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(23): error C2039: 'cin': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\sstream(13): note: see declaration of 'std'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(23): error C2065: 'cin': undeclared identifier
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(24): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\sstream(13): note: see declaration of 'std'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(24): error C2065: 'cout': undeclared identifier
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(24): error C2563: mismatch in formal parameter list
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(24): error C2568: '<<': unable to resolve function overload
+  c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(24): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(25): error C2039: 'cin': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\sstream(13): note: see declaration of 'std'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(25): error C2065: 'cin': undeclared identifier
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(28): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\sstream(13): note: see declaration of 'std'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(28): error C2065: 'cout': undeclared identifier
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(28): error C2563: mismatch in formal parameter list
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(28): error C2568: '<<': unable to resolve function overload
+  c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(28): note: could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 1\task 1\task 1\source.cpp(28): error C3861: 'combineWords': identifier not found
+  Generating Code...
+  Compiling...
+  unittest1.cpp
+  Generating Code...

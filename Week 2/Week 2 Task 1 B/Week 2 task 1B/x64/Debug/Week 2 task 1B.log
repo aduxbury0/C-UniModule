@@ -1,6 +1,6 @@
 ﻿  Source.cpp
-c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1b\week 2 task 1b\source.cpp(17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1b\week 2 task 1b\source.cpp(18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1b\week 2 task 1b\source.cpp(21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Week 2 task 1B.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 2\Week 2 task 1B\x64\Debug\Week 2 task 1B.exe
-  Week 2 task 1B.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 2\Week 2 task 1B\x64\Debug\Week 2 task 1B.pdb (Partial PDB)
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1 b\week 2 task 1b\source.cpp(12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1 b\week 2 task 1b\source.cpp(13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1 b\week 2 task 1b\source.cpp(16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Week 2 task 1B.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 2\Week 2 Task 1 B\x64\Debug\Week 2 task 1B.exe
+  Week 2 task 1B.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 2\Week 2 Task 1 B\x64\Debug\Week 2 task 1B.pdb (Partial PDB)

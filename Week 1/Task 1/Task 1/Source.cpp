@@ -6,25 +6,37 @@ string.
 
 */
 
-#include <iostream>
-#include <string>
+#include "stdafx.h"
+#include "Source.h"
 
-using namespace std;
 
 int main() {
 
 	string word1 = "";
 	string word2 = "";
-	string wordHolding = "";
-	int length1 = 0;
-	int length2 = 0;
-	string newWord = "";
+
 
 
 	cout << "Please input the first string: ";
 	cin >> word1;
 	cout << endl << "Please input the second string: ";
 	cin >> word2;
+
+
+	cout << endl << combineWords(word1, word2) << endl << endl;
+
+	system("pause");
+
+	return 0;
+}
+
+string combineWords(string word1, string word2) {
+
+	string wordHolding = "";
+	int length1 = 0;
+	int length2 = 0;
+	string newWord = "";
+
 
 	//sets the word length variables
 
@@ -58,9 +70,6 @@ int main() {
 
 	}
 
-	cout << endl << newWord << endl << endl;
+	return newWord;
 
-	system("pause");
-
-	return 0;
 }

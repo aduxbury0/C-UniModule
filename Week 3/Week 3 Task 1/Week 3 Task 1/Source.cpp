@@ -1,13 +1,7 @@
 /* Week 3 Task 1 - Program that prints words mirrored from a single sentence input, the complexity being O(1^n) as the function calls only a single copy of itself for every iteration */
 
-#include <iostream>
-#include <string>
-#include <sstream>
-#include <vector>
-
-using namespace std;
-
-string Mirroring(string& word, int count);
+#include "stdafx.h"
+#include "Source.h"
 
 int main() {
 

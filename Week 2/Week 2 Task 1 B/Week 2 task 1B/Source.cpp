@@ -1,13 +1,8 @@
 /*Week 2 Task 1B - Creating a function from the provided psuedocode - Alex Duxbury*/
 
-#include <iostream>
-#include <string>
-#include <vector>
 
-
-using namespace std;
-
-vector<int> PolyMulti(int m, int n, vector<int> P1, vector<int> P2);
+#include "stdafx.h"
+#include "Source.h"
 
 
 int main() {

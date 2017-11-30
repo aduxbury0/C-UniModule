@@ -1,0 +1,5 @@
+﻿  unittest1.cpp
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1 b\week 2 task 1b\unittest1\unittest1.cpp(18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 2\week 2 task 1 b\week 2 task 1b\unittest1\unittest1.cpp(19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  UnitTest1.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 2\Week 2 Task 1 B\x64\Debug\UnitTest1.dll
+  UnitTest1.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 2\Week 2 Task 1 B\x64\Debug\UnitTest1.pdb (Partial PDB)
