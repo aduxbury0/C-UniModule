@@ -24,7 +24,7 @@ public:
 	void addEdge(int, int);
 	void printEdges(int);
 	bool alreadyVisited(Vertex*);
-	void depthFirstSearch();
+	void depthFirstSearch(Vertex*);
 	bool isPath(int, int);
 
 };

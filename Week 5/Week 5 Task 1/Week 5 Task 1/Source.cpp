@@ -1,77 +1,49 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include "stdafx.h"
+#include "Source.h"
 
-//Nodes and lists use public data members for convenience
-//This may make some software engineers froth at the mouth
 
-class Node
-{
-public:
-	int value; //This could really be any type
-	Node* next;
-	Node* prev;
-	Node(int val) {
-		std::cout << "Node constructr!" << std::endl;
-		this->value = val;
-		this->next = (Node*)0;
-		this->prev = (Node*)0;
-	}
-	~Node() {
-		std::cout << "Node destructor - I had the value " << this->value << std::endl;
-	}
-};
-class List
-{
 
-public:
-	Node* head;
-	Node* tail;
+void List::insert(Node* n, Node* x){
 
-	List() {
-		std::cout << "List Constructor!" << std::endl;
-		this->head = 0;
-		this->tail = 0;
+	if (n != 0) {
+		x->next = n->next;
+		n->next = x;
+		x->prev = n;
+		if (x->next != 0)
+			x->next->prev = x;
 	}
-	~List() {
-		std::cout << "List destructor!" << std::endl;
+	if (this->head == 0) {
+		this->head = x;
+		this->tail = x;
+		x->prev = 0;
+		x->next = 0;
 	}
-	void insert(Node* n, Node* x) {
-		if (n != 0) {
-			x->next = n->next;
-			n->next = x;
-			x->prev = n;
-			if (x->next != 0)
-				x->next->prev = x;
-		}
-		if (this->head == 0) {
-			this->head = x;
-			this->tail = x;
-			x->prev = 0;
-			x->next = 0;
-		}
-		else if (this->tail == n) {
-			this->tail = x;
-		}
+	else if (this->tail == n) {
+		this->tail = x;
 	}
-	void nodeDelete(Node* x) {
+}
+
+
+void List::nodeDelete(Node* x) {
 	
-		if (x->next == nullptr) {
-			
-			(x->prev)->next = nullptr;
-			delete x;
-			
-		
-		}
-		else {
-			
-			(x->prev)->next = x->next; // sets the 'next' pointer of the previous node to be the location of the node after x
-			(x->next)->prev = x->prev; // sets the 'prev' pointer of the next node to be the location of the node before x
-			delete x; // deletes x
-		}
+	if (x->next == nullptr) { // Checks to see if the node is the last node in the list
+
+		(x->prev)->next = nullptr;
+		delete x;
+
 
 	}
-	void display() {
+	else {
+
+		(x->prev)->next = x->next; // sets the 'next' pointer of the previous node to be the location of the node after x
+		(x->next)->prev = x->prev; // sets the 'prev' pointer of the next node to be the location of the node before x
+		delete x; // deletes x
+	}
+}
+
+
+void List::display() {
+	
 		Node* i = this->head;
 		std::cout << "List: ";
 		while (i != 0) {
@@ -79,10 +51,8 @@ public:
 			i = i->next;
 		}
 		std::cout << std::endl;
-	}
-};
-
-void deleteDuplicates(List *inputList);
+	
+}
 
 int main(int argc, char *argv[])
 {
@@ -102,15 +72,16 @@ int main(int argc, char *argv[])
 	deleteDuplicates(l);
 	l->display();
 
-	delete l;
 
 	system("PAUSE");
+
+	delete l;
 	  
 	return 0;
 }
 
 
-void deleteDuplicates(List *inputList) {
+void deleteDuplicates(List* inputList) {
 
 	Node* currentNode = inputList->head;
 
@@ -125,7 +96,6 @@ void deleteDuplicates(List *inputList) {
 			if (currentNode->value == checkNode->value) {
 
 				checkNode = checkNode->prev;
-				std::cout << "deleting node : " << (checkNode->next)->value << std::endl;
 				inputList->nodeDelete(checkNode->next);
 
 				}

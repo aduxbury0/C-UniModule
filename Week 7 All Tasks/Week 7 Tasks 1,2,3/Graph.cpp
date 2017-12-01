@@ -1,4 +1,6 @@
+#include "stdafx.h"
 #include "Graph.h"
+
 
 
 
@@ -88,85 +90,111 @@ bool Graph::alreadyVisited(Vertex* inputVertex) {
 - Accepts no inputs
 - Will write each new node it visits to a text document */
 
-void Graph::depthFirstSearch() {
+void Graph::depthFirstSearch(Vertex* inputNode) {
 
-	Vertex* currentVertex = adjacencyList[0]; // Starting the DFS at the first node in the Graphs vector, arbitrary starting point
-	Vertex* nextVertex = nullptr;
+	Vertex* currentVertex = inputNode;
+
+	if (inputNode == nullptr) { // allows you to enter a null ptr as an arguement to let the function start from the beginning of the adjacency list
+
+		currentVertex = adjacencyList[0]; // Starting the DFS at the first node in the Graphs vector, arbitrary starting point
+
+	}
+
 	std::stack<Vertex*> vertexStack;
 	bool loopContinue = true;
 	visitedVerticies.clear(); // Making sure the visited vertices list is always clear when starting to traverse the graph
-	std::ofstream DFSfile;
+	std::ofstream DFSfile; // creating the object to deal with writing the text document
 	DFSfile.open("DFS.txt");
-	DFSfile.clear();
+	DFSfile.clear(); //opening and clearing the document, ready for use
 
 
 	while (loopContinue) {
 
-		std::cout << "Current node being written to TXT file : " << currentVertex->vertexValue << std::endl;
-		DFSfile << currentVertex->vertexValue << "\n";
+		if (!alreadyVisited(currentVertex)) { // Will print each unique node it comes accross (One that is not already visited) & add it to visited list
 
-
-		if (!alreadyVisited(currentVertex)) { // checking to see if the current node has already been searched, if it hasnt then it will be added to the stack and the first non searched
-											  // member of it's vector of edges will be searched
 			visitedVerticies.push_back(currentVertex);
-			vertexStack.push(currentVertex);
 
-			for (int i = 0; i < currentVertex->vectorOfEdges.size(); i++) { 
+			std::cout << "Current node being written to TXT file : " << currentVertex->vertexValue << std::endl;
+			DFSfile << currentVertex->vertexValue << "\n";
 
-				if (!alreadyVisited(currentVertex->vectorOfEdges[i])) { // search through vector of edges for non visited edge
-
-					currentVertex = currentVertex->vectorOfEdges[i];
-					break;
-
-				}
-
-				else if (vertexStack.empty()) { // This will end the loop if the stack has been depleted
-					loopContinue = false;
-					break;
-
-				}
-
-				else {
-
-					currentVertex = vertexStack.top(); // Popping the top of the stack if there are no unvisited edges
-					vertexStack.pop();
-
-				}
-			}
 		}
+		
 
-		else {
+		for (int i = 0; i < currentVertex->vectorOfEdges.size(); i++) { // search through vector of edges for non visited edge
 
-			break;
+			if (!alreadyVisited(currentVertex->vectorOfEdges[i])) { // Found a non-visited edge
 
+
+
+				vertexStack.push(currentVertex);
+				currentVertex = currentVertex->vectorOfEdges[i];
+
+				break;
+
+			}
+
+			else if (vertexStack.empty() & i == currentVertex->vectorOfEdges.size()-1) { // This will end the loop if the stack has been depleted
+				loopContinue = false;
+				break;
+
+			}
+
+			else if(i == currentVertex->vectorOfEdges.size()-1) {
+
+				currentVertex = vertexStack.top(); // Popping the top of the stack if there are no unvisited edges
+				vertexStack.pop();
+				
+
+
+			}
 		}
 	}
 }
+
+
+/* Method for checking whether a path exists between 2 points
+
+inputs: integer value of the node you wish to travel from, integer value of the node you wish to travel to
+outputs: true if there is a path, false if there is not*/
 
 bool Graph::isPath(int startVertex, int endVertex) {
 
 	bool startIsSubset = false;
 	bool endIsSubset = false;
 
+	Vertex* startVertexLocation = nullptr;
 
-	for (int i = 0; i < adjacencyList.size(); i++) {
+	for (int i = 0; i < adjacencyList.size(); i++) { // For loop that checks that both the start and end nodes are a subset of the overall graph
 
-		if (adjacencyList[i]->vertexValue == startVertex) {
+		if (adjacencyList[i]->vertexValue == startVertex) { // start is a subset
 
 			startIsSubset = true;
+			startVertexLocation = adjacencyList[i];
+
+
 		}
 
-		if (adjacencyList[i]->vertexValue == endVertex) {
+		if (adjacencyList[i]->vertexValue == endVertex) { // end is a subset
 
 			endIsSubset = true;
 		}
 
-		if (startIsSubset == true & endIsSubset == true) {
+		if (startIsSubset == true & endIsSubset == true) { // will break from the loop if both are found for efficiancy
 			break;
 		}
 	}
 
-	this->depthFirstSearch();
+	if (startIsSubset == false | endIsSubset == false) { // if one or both are not part of the graph then they are not connected
+
+		return false;
+
+	}
+
+	//uses the depth first search to traverse the graph that is connected to the root, it saves all visited Verticies in a public member vector
+	this->depthFirstSearch(startVertexLocation); //makes use of the changeable start location of the DFS and starts it at the starting Vertex
+
+	startIsSubset = false;
+	endIsSubset = false;
 
 	for (int i = 0; i < visitedVerticies.size(); i++) {
 

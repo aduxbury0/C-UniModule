@@ -95,7 +95,12 @@ BinTreeNode * searchTree(BinTreeNode* tree, int value) {
 
 	}
 }
+/* This is the method for deleting a node in a given tree 'tree' using the nodes value 'deletedValue'
 
+inputs: Pointer to a Binary Tree Node type object, integer containig the value contained in the node that you wish to delete
+outputs: none
+
+*/
 void delete_node(BinTreeNode* tree, int deletedValue) {
 
 	tree = searchTree(tree, deletedValue);

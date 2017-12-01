@@ -1,8 +1,5 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include "Graph.h"
-
+#include "stdafx.h"
+#include "Source.h"
 
 int main() {
 

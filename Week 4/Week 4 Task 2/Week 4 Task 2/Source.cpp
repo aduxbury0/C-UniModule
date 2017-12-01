@@ -1,11 +1,8 @@
 /* Week 4 - Task 2 - Use a binary search to implement a guessing game to guess a number the user is thinking of between 1 and 20,000*/
-#include <iostream>
-#include <string>
-#include <vector>
 
-using namespace std;
+#include "stdafx.h"
+#include "Source.h"
 
-void numberGame(vector<int> inputArray);
 
 int main() {
 
@@ -31,7 +28,7 @@ void numberGame(vector<int> inputArray) {
 	advance(vectorMiddle, (inputArray.size() / 2));
 	bool loopContinue = true;
 
-	cout << "Is the number you're thinking of this: " << *vectorMiddle << endl;
+	cout << "Is the number you're thinking of " << *vectorMiddle << "?" << endl;
 	
 	// while loop contains the componants of the binary search, kept in a while loop so anything that isnt the correct input will prompt the user to enter a correct input until they do so
 	while (loopContinue) {

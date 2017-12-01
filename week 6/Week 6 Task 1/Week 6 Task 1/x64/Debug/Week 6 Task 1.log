@@ -1,10 +1,11 @@
 ﻿  Source.cpp
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(79): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(85): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(107): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(119): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(133): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(146): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\alex\desktop\weekly tasks\week 6 task 1\week 6 task 1\source.cpp(97): warning C4715: 'searchTree': not all control paths return a value
-  Week 6 Task 1.vcxproj -> C:\Users\Alex\Desktop\Weekly Tasks\Week 6 Task 1\x64\Debug\Week 6 Task 1.exe
-  Week 6 Task 1.vcxproj -> C:\Users\Alex\Desktop\Weekly Tasks\Week 6 Task 1\x64\Debug\Week 6 Task 1.pdb (Partial PDB)
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(79): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(85): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(107): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(119): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(133): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(146): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 6\week 6 task 1\week 6 task 1\source.cpp(97): warning C4715: 'searchTree': not all control paths return a value
+  LINK : C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\week 6\Week 6 Task 1\x64\Debug\Week 6 Task 1.exe not found or not built by the last incremental link; performing full link
+  Week 6 Task 1.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\week 6\Week 6 Task 1\x64\Debug\Week 6 Task 1.exe
+  Week 6 Task 1.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\week 6\Week 6 Task 1\x64\Debug\Week 6 Task 1.pdb (Partial PDB)
