@@ -13,7 +13,23 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestMethod1)
 		{
-			// TODO: Your test code here
+			
+			try {
+
+				vector<int> testVector;
+				for (int i = 0; i <= 120000; i++) {
+					testVector.push_back(i);
+				}
+
+				numberGame(testVector);
+
+			}
+
+			catch(overflow_error) {
+
+				Assert::Fail;
+
+			}
 		}
 
 	};

@@ -1,40 +1,27 @@
-/* This is the second part of week 1's intermediate and beginner tasks, creating a program that will let the user know if the number they have entered is an armstrong
-number with a simple true or false return statement.*/
 
-#include <iostream>
-#include <string>
-#include <sstream>
-
-using namespace std;
+#include "stdafx.h"
+#include "Source.h"
 
 int main() {
 
-	string inputnumber = "000"; 
-	cout << "Please enter your 3 digit number: " << endl;
-	cin >> inputnumber;
+	bool loopContinue = true;
+	string inputnumber = "000";
 
-	stringstream intInput(inputnumber);
-	int inputtedInt;
-	intInput >> inputtedInt;
+	while (loopContinue) {
 
-	char firstcubechar = inputnumber[0];
-	char secondcubechar = inputnumber[1];
-	char thirdcubechar = inputnumber[2];
+		cout << "Please enter your 3 digit number: " << endl;
+		cin >> inputnumber;
+	
+		if (inputnumber.size() == 3) { // makes sure the inputted string is 3 chars long
 
-	int firstcube = firstcubechar - '0';
-	int secondcube = secondcubechar - '0';
-	int thirdcube = thirdcubechar - '0';
+			loopContinue = false;
 
-	firstcube = (firstcube * firstcube) * firstcube;
-	secondcube = (secondcube * secondcube) * secondcube;
-	thirdcube = (thirdcube * thirdcube) * thirdcube;
-
-	if (firstcube + secondcube + thirdcube == inputtedInt) {
-		cout << "True" << endl;
+		}
 	}
-	else {
-		cout << "False" << endl;
-	}
+
+
+	isArmstrong(inputnumber);
+
 
 	system("PAUSE");
 
@@ -42,3 +29,38 @@ int main() {
 	
 }
 
+/* Function to determine if an inputted string is an armstrong number or not
+input: takes 1 numerical string
+output: True if it is an armstrong number or False if not*/
+
+bool isArmstrong(string inputNumber) {
+	
+	stringstream intInput(inputNumber); 
+	int inputtedInt; 
+	intInput >> inputtedInt; // inserting the string number into an int using a string stream, can also be done with stoi
+
+	char firstcubechar = inputNumber[0]; //creating the 3 numbers to cube from the input
+	char secondcubechar = inputNumber[1];
+	char thirdcubechar = inputNumber[2];
+
+	int firstcube = firstcubechar - '0'; // minus '0' unix number from a char to get an integer compatible value
+	int secondcube = secondcubechar - '0';
+	int thirdcube = thirdcubechar - '0';
+
+
+	firstcube = (firstcube * firstcube) * firstcube; //cubing 3 numbers created earlier
+	secondcube = (secondcube * secondcube) * secondcube;
+	thirdcube = (thirdcube * thirdcube) * thirdcube;
+
+	if (firstcube + secondcube + thirdcube == inputtedInt) { //comparison with original input
+		cout << "True" << endl;
+		return true;
+	}
+	else {
+		cout << "False" << endl;
+		return false;
+	}
+
+
+
+}

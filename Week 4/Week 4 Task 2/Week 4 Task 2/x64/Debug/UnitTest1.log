@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  unittest1.cpp
+c:\users\alex\desktop\210ct-tasks\210ct-weekly-tasks\week 4\week 4 task 2\week 4 task 2\unittest1\unittest1.cpp(30): warning C4551: function call missing argument list
+  Source.cpp
+  Generating Code...
+     Creating library C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 4\Week 4 Task 2\x64\Debug\UnitTest1.lib and object C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 4\Week 4 Task 2\x64\Debug\UnitTest1.exp
+  UnitTest1.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 4\Week 4 Task 2\x64\Debug\UnitTest1.dll
+  UnitTest1.vcxproj -> C:\Users\Alex\Desktop\210CT-Tasks\210CT-Weekly-Tasks\Week 4\Week 4 Task 2\x64\Debug\UnitTest1.pdb (Partial PDB)
